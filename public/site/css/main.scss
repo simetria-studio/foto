@@ -166,6 +166,10 @@ footer {
         text-align: center;
     }
 
+    .links {
+        text-align: center !important;
+    }
+
     .mid-header-grid {
         grid-template-columns: 1fr !important;
         justify-items: center !important;
@@ -174,10 +178,12 @@ footer {
     .product-grid {
         grid-template-columns: 1fr !important;
     }
-    .icons{
+
+    .icons {
         margin: 0 !important;
     }
-    .logo{
+
+    .logo {
         margin-left: 0 !important;
     }
 
