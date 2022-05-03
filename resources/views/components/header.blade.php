@@ -5,14 +5,15 @@
                 <h5>Bem vindo, @if (!Auth::check())
                         <a href="{{ route('login') }}">Clique Aqui</a>
                     @else
-                    <a href="{{ route('home') }}">{{ auth()->user()->name }}</a>
+                        <a href="{{ route('home') }}">{{ auth()->user()->name }}</a>
                     @endif para entrar</h5>
             </div>
             <div>
 
             </div>
             <div class="links">
-                <h5><a href="{{ route('home') }}">Minha Conta</a> | <a href="{{ route('compras') }}">Minhas Compras</a> | <a href="#">Sou Fotografo</a> </h5>
+                <h5><a href="{{ route('home') }}">Minha Conta</a> | <a href="{{ route('compras') }}">Minhas
+                        Compras</a> | <a href="#">Sou Fotografo</a> </h5>
             </div>
         </div>
     </div>
@@ -49,24 +50,13 @@
     </div>
 </div>
 <div class="menu">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('site') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Corrida</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ciclismo</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <div class="desktop">
+        @component('components.menu-desktop')
+        @endcomponent
     </div>
+    <div class="mobile">
+        @component('components.menu-mobile')
+        @endcomponent
+    </div>
+
 </div>
