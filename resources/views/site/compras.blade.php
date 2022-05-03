@@ -11,14 +11,7 @@
                     </div>
 
                     <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        <h3>Bem vindo {{ auth()->user()->name }}</h3>
-                        <p>Você fez um total de 0 pedidos essa semana</p>
+                        <p>Você não possuí compras no momento</p>
                     </div>
                 </div>
             </div>
